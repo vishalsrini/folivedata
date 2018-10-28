@@ -1,0 +1,53 @@
+<p-dataTable [value]="foRates">
+  <p-column field="symbol" header="Symbol" [filter]="true" [sortable]="true"></p-column>
+  <p-column field="open" header="Open" [sortable]="true">
+    <ng-template let-row="rowData" pTemplate="body">
+      {{row.open | number:'1.2'}}
+    </ng-template>
+  </p-column>
+  <p-column field="high" header="High" [sortable]="true">
+    <ng-template let-row="rowData" pTemplate="body">
+      {{row.high | number:'1.2'}}
+    </ng-template>
+  </p-column>
+  <p-column field="low" header="Low" [sortable]="true">
+    <ng-template let-row="rowData" pTemplate="body">
+      {{row.low | number:'1.2'}}
+    </ng-template>
+  </p-column>
+  <p-column field="ltp" header="LTP" [sortable]="true">
+    <ng-template let-row="rowData" pTemplate="body">
+      {{row.ltp | number:'1.2'}}
+    </ng-template>
+  </p-column>
+  <p-column field="chng" header="Chng" [sortable]="true">
+    <ng-template let-row="rowData" pTemplate="body">
+      {{row.chng | number:'1.2'}}
+    </ng-template>
+  </p-column>
+  <p-column field="perChng" header="% Chng" [sortable]="true">
+    <ng-template let-row="rowData" pTemplate="body">
+      {{row.perChng | number:'1.2'}}
+    </ng-template>
+  </p-column>
+  <p-column field="trdVol" header="Volume(lacs)" [sortable]="true">
+    <ng-template let-row="rowData" pTemplate="body">
+      {{row.trdVol | number:'1.2'}}
+    </ng-template>
+  </p-column>
+  <p-column field="ntp" header="Turnver(crs.)" [sortable]="true">
+    <ng-template let-row="rowData" pTemplate="body">
+      {{row.ntp | number:'1.2'}}
+    </ng-template>
+  </p-column>
+  <p-column field="wtAvg" header="Weighted Avg" [sortable]="true">
+    <ng-template let-row="rowData" pTemplate="body">
+      {{row.wtAvg | number:'1.2-2'}}
+    </ng-template>
+  </p-column>
+  <p-column field="deviation" header="Deviation" [sortable]="true">
+    <ng-template let-row="rowData" pTemplate="body">
+      {{row.deviation | number:'1.2-2'}}
+    </ng-template>
+  </p-column>
+</p-dataTable>
