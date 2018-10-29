@@ -1,5 +1,9 @@
 <p-dataTable [value]="foRates">
-  <p-column field="symbol" header="Symbol" [filter]="true" [sortable]="true"></p-column>
+  <p-column field="symbol" header="Symbol" [filter]="true" [sortable]="true">
+    <ng-template let-row="rowData" pTemplate="body">
+      <div style="text-align: left">{{row.symbol}}</div>
+    </ng-template>
+  </p-column>
   <p-column field="open" header="Open" [sortable]="true">
     <ng-template let-row="rowData" pTemplate="body">
       {{row.open | number:'1.2'}}

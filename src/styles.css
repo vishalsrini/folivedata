@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+table {
+    border: 1px solid black !important;
+    font-size: smaller !important;
+    text-align: right !important;
+}
+
+thead {
+    text-align: center !important;
+    background: steelblue !important;
+    color: white;
+}
+
+th {
+    width: 150px !important;
+    cursor: pointer !important;
+}
+
+tr :hover{
+    cursor: pointer !important;
+    background-color: rgba(143, 130, 130, 0.767);
+}
